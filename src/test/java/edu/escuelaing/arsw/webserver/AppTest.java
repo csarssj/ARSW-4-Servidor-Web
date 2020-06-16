@@ -1,5 +1,9 @@
 package edu.escuelaing.arsw.webserver;
 
+import java.net.MalformedURLException;
+import java.util.ArrayList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
@@ -31,8 +35,17 @@ public class AppTest
     /**
      * Rigourous Test :-)
      */
-    public void testApp()
-    {
-        assertTrue( true );
+    public void testApp() throws Exception
+    {   
+        /*String [] args = new String[] {"http://localhost:30000/example.html"};
+        System.out.println("Listo para recibir ...");
+        int i = 0;
+       // while(i < 1000){
+            System.out.println("entro");
+            BrowserPrototype.main(args);
+            i++;
+            System.out.println("numero:" +i);
+        //}*/
+        assert(true);
     }
 }

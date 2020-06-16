@@ -1,4 +1,4 @@
-package edu.escuelaing.arsw.webserver;
+    package edu.escuelaing.arsw.webserver;
 
 import java.io.IOException;
 import java.net.ServerSocket;
@@ -23,7 +23,7 @@ public class Client {
 
         ServerSocket serverSocket = new ServerSocket(getPort());
         System.out.println("Listo para recibir ...");
-
+        
         ExecutorService pool = Executors.newCachedThreadPool();
 
         while (true) {
@@ -36,12 +36,12 @@ public class Client {
     /**
      * Devuelve el puerto que escuchará el servidor
      * 
-     * @return El puerto de despliegue o 35001 si es local
+     * @return El puerto de despliegue o 35000 si es local
      */
     private static int getPort() {
         if (System.getenv("PORT") != null) {
             return Integer.parseInt(System.getenv("PORT"));
         }
-        return 35001;
+        return 30000;
     }
 }

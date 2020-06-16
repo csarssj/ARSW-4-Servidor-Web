@@ -21,9 +21,9 @@ import java.util.logging.Logger;
 public class HttpServer implements Runnable  {
     private final Socket clientSock;
     /**
-     * Creates a new ClientHandler thread for the socket provided.
+     * Crea un nuevo hilo ClientSock para el socket proporcionado
      *
-     * @param clientSocket the socket to the client.
+     * @param clientSocket el socket para el cliente.
      */
     public HttpServer (final Socket clientSocket) {
         this.clientSock = clientSocket;

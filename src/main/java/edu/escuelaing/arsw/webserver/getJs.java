@@ -16,6 +16,7 @@ import java.io.OutputStream;
  * @author ceseg
  */
 public class getJs {
+
     public static void getJs(String element, OutputStream  outputStream) throws IOException{
         try{
             String text = "";
@@ -25,7 +26,7 @@ public class getJs {
                 text = text + infile;
             }
             outputStream.write(("HTTP/1.1 201 FOUND  \r\n"
-                        + "Content-Type: application/json; charset=\"UTF-8\" \r\n"
+                        + "Content-Type: text/js; charset=\"UTF-8\" \r\n"
                         + "\r\n"
                         + text).getBytes());
         }catch (IOException e) {
