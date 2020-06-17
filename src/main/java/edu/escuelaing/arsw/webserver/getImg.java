@@ -25,9 +25,6 @@ public class getImg {
             BufferedImage image = ImageIO.read(new File(System.getProperty("user.dir")+ "/resources" + element));
             ByteArrayOutputStream ArrBytes = new ByteArrayOutputStream();
             DataOutputStream writeImg = new DataOutputStream(clientSocket);
-            String img = "HTTP /1.1 404 NOT FOUND \r\n"
-                    + "Content-Type: text/html; charset=\"UTF-8\" \r\n"
-                    + "\r\n";
             ImageIO.write(image, "PNG", ArrBytes);
             writeImg.writeBytes("HTTP/1.1 200 OK \r\n");
             writeImg.writeBytes("Content-Type: image/png \r\n");

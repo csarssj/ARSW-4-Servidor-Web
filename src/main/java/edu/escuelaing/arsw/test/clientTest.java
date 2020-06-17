@@ -28,7 +28,6 @@ public class clientTest  extends Thread {
     @Override
     public void run() {
         try {
-            long ini = System.nanoTime();
             URL url = new URL(this.url); 
             BufferedReader reader = new BufferedReader(new InputStreamReader(url.openStream()));
             String line = null; 

@@ -49,7 +49,9 @@ public class HttpServer implements Runnable  {
                     getFile.getFiles(element, clientSock.getOutputStream());
                 } else if (element.contains(".js")) {
                     getJs.getJs(element, clientSock.getOutputStream());
-                } else {
+                } else if (element.contains(".css")) {
+                    getCss.getCss(element, clientSock.getOutputStream());
+                }else {
                     outputLine = "HTTP/1.1 200 OK\r\n"
                             + "Content-Type: text/html\r\n"
                             + "\r\n"

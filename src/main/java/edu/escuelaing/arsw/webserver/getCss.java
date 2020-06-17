@@ -12,25 +12,25 @@ import java.io.OutputStream;
 
 /**
  *
- * 
  * @author ceseg
  */
-public class getJs {
-
-    public static void getJs(String element, OutputStream  outputStream) throws IOException{
+public class getCss {
+        public static void getCss(String element, OutputStream  outputStream)throws IOException{
         try{
             String text = "";
+            
             BufferedReader reader = new BufferedReader(new FileReader(System.getProperty("user.dir")+ "/resources" + element));
             String infile = null;
             while ((infile = reader.readLine()) != null) {
-                text = text + infile;
+                  text = text + infile;
             }
-            outputStream.write(("HTTP/1.1 201 FOUND  \r\n"
-                        + "Content-Type: text/javascript; charset=\"UTF-8\" \r\n"
-                        + "\r\n"
-                        + text).getBytes());
+            outputStream.write(("HTTP/1.1 201 Found  \r\n"
+                    + "Content-Type: text/css; charset=\"utf-8\" \r\n"
+                    + "\r\n"
+                    + text).getBytes());
         }catch (IOException e) {
                 e.printStackTrace();
         }
     }
+    
 }
