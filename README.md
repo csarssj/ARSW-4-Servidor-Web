@@ -25,7 +25,7 @@ o ingresando a través de este link desplegado en heroku:
 
 [heroku](https://calm-brushlands-54526.herokuapp.com/index.html)
 
-![image](https://github.com/csarssj/ARSW-4-Servidor-Web/tree/master/img/prueba.png)
+![image](https://github.com/csarssj/ARSW-4-Servidor-Web/blob/master/img/prueba.png)
 
 ### Prerequisitos
 
@@ -49,16 +49,16 @@ Si uno de ellos pide un archivo muy grande los demás tienen que esperar La mayo
 
 Servidores Comcurrentes: hay procesos separados para atender el puerto y para transferir el archivo
 
-![image](https://github.com/csarssj/ARSW-4-Servidor-Web/tree/master/img/server1.png)
+![image](https://github.com/csarssj/ARSW-4-Servidor-Web/blob/master/img/server1.png)
 
 Después que el cliente contacta al servidor, éste crea otro proceso para para atender al cliente y se queda escuchando el puerto por otro
 Mientras el nuevo proceso está atendiendo al primer cliente, el segundo cliente puede contactar al servidor en el puerto 
 
-![image](https://github.com/csarssj/ARSW-4-Servidor-Web/tree/master/img/server2.png)
+![image](https://github.com/csarssj/ARSW-4-Servidor-Web/blob/master/img/server2.png)
 
 Y el servidor crea otro proceso  ahora un tercer cliente contacta al servidor
 
-![image](https://github.com/csarssj/ARSW-4-Servidor-Web/tree/master/img/server3.png)
+![image](https://github.com/csarssj/ARSW-4-Servidor-Web/blob/master/img/server3.png)
 
 ## Pruebas
 
@@ -70,15 +70,15 @@ Para las pruebas se realizaron dos tipo de prueba; La primera con Jmeter  y las 
 
   - Configuracion
 
-	![image](https://github.com/csarssj/ARSW-4-Servidor-Web/tree/master/img/jmeter.png)
+	![image](https://github.com/csarssj/ARSW-4-Servidor-Web/blob/master/img/jmeter.png)
 	
   - Arbol de resultados
 
-	![image](https://github.com/csarssj/ARSW-4-Servidor-Web/tree/master/img/jmeter2.png)
+	![image](https://github.com/csarssj/ARSW-4-Servidor-Web/blob/master/img/jmeter2.png)
 	
   - Gráfico
 
-	![image](https://github.com/csarssj/ARSW-4-Servidor-Web/tree/master/img/jmeter3.png)
+	![image](https://github.com/csarssj/ARSW-4-Servidor-Web/blob/master/img/jmeter3.png)
 
 
 - *ClaseTest*
