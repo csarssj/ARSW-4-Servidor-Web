@@ -21,6 +21,9 @@ Ejecutando el siquiente comando en la consola y accediendo al siguiente link se 
 java -cp target\WebServer-1.0-SNAPSHOT.jar edu.escuelaing.arsw.webserver.Client
 
 ```
+o ingresando a través de este link desplegado en heroku:
+
+[heroku](https://calm-brushlands-54526.herokuapp.com/index.html)
 
 ![image](https://github.com/csarssj/ARSW-4-Servidor-Web/tree/master/img/prueba.png)
 
